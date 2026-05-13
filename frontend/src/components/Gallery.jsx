@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Trash2, Calendar, Fingerprint } from 'lucide-react';
 
-const API_URL = "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Gallery = () => {
   const [snapshots, setSnapshots] = useState([]);

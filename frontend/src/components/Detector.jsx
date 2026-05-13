@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Camera, RefreshCw, Zap, Smile, Volume2, Layout, Maximize, Hand } from 'lucide-react';
 import { detectEmotion } from '../utils/ARFilters';
 
-const API_URL = "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const Detector = () => {
   const webcamRef = useRef(null);
